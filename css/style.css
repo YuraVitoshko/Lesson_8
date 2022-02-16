@@ -1,0 +1,498 @@
+@import "null.css";
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Taviraj:400&display=swap");
+/* Максимальная ширина, семейство шрифтов, стиль, толщина, размер текста. */
+body{
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 16px;
+	line-height: 160%;
+}
+/* Минимальная высота, отображение области внутри элемента */
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	max-width: 1920px;
+}
+/* =============================================================header================================================================= */
+.header{
+	max-width: 1024px;
+	margin: 0 auto;
+	text-align: center;
+}
+.menu{
+	color: #5267a3;
+	font-weight: 700;
+	font-size: 24px;
+}
+.list-item{
+	text-transform: uppercase;
+}
+.list-item:hover{
+	text-decoration: underline;
+}
+/* =============================================================Main================================================================= */
+.main{
+	max-width: 1024px;
+	margin: 0 auto;
+	background-color: rgb(224, 224, 224);
+}
+/* =============================================================ARTICLE================================================================= */
+.article{
+	margin: 0 0 20px 0;
+}
+span{
+	display: inline-block;
+	font-size: 22px;
+	color: #5267a3;
+}
+/* ==================================HOVER============================== */
+.article h1{
+	font-size: 32px;
+	font-weight: 900;
+	color: #ff7728;
+	text-align: center;
+	margin: 0 0 10px 0;
+}
+.article-title{
+	text-align: center;
+	font-size: 22px;
+	font-weight: 700;
+	color: green;
+	margin: 0 0 15px 0;
+}
+.article-h2-h2{
+	color: blueviolet;
+	font-size: 28px;
+	text-align: center;
+	margin: 0 0 20px 0;
+}
+.article-link1{
+	padding: 0 0 0 30px;
+	font-size: 24px;
+	color: #ff2a23;
+}
+.article-link1:hover{
+	/* color: rgb(47, 47, 255); */
+	text-decoration: underline;
+}
+.article-block1 p{
+	margin: 0 0 10px 0;
+}
+.article-block1{
+	background-color: #95b2ff;
+	padding: 10px 30px;
+}
+.article-paragraph1:hover{
+	box-shadow: 3px 3px 2px #333333;
+	background-color: rgb(241, 241, 241);
+	/* cursor: pointer; */
+	/* cursor: default; */
+}
+.article-paragraph2:hover{
+	box-shadow: 3px 3px 2px rgb(121, 0, 0);
+	background-color: rgb(255, 0, 0);
+	color: #FFFFFF;
+}
+.article-paragraph3:hover{
+	box-shadow: 3px 3px 2px rgb(14, 121, 0);
+	background-color: rgb(24, 207, 0);
+	color: #FFFFFF;
+}
+/* ==================================HOVER+ACTIVE============================== */
+.article-link2{
+	display: inline-block;
+	padding: 0 0 0 30px;
+	font-size: 24px;
+	color: #ff2a23;
+}
+.article-link2:hover{
+	text-decoration: underline;
+}
+.article-link2:active{
+	color: rgb(112, 60, 255);
+}
+.article-image1 {
+	width: 50px;
+	margin: 0 500px 15px 30px;
+	text-align: left;
+}
+.article-image1:hover {
+	width: 100px;
+}
+.article-image1:active {
+	box-shadow: 5px 5px 2px #000;
+}
+.article-image2 {
+	text-align: right;
+	width: 50px;
+	margin: 0 0 15px 0;
+}
+.article-image2:hover {
+	width: 150px;
+	box-shadow: inset -5px -5px 2px #000;
+}
+.article-image2:active {
+	box-shadow: none;
+}
+/* ==================================HOVER+ACTIVE+VISITED============================== */
+.article-block-link{
+	background-color: rgb(70, 250, 181);
+	margin: 0 0 20px 0;
+}
+.article-block-link a{
+	display: inline-block;
+	padding: 30px;
+	font-size: 24px;
+	color: #ff4b44;
+}
+.article-link3:hover {
+	text-decoration: underline;
+}
+.article-link3:active {
+	color: #00d447;
+}
+.article-link3:visited {
+	color: #0d0053;
+}
+.article-link4:hover {
+	text-decoration: underline;
+}
+.article-link4:active {
+	color: #00d447;
+}
+.article-link4:visited {
+	color: #0d0053;
+}
+.article-link5:hover {
+	text-decoration: underline;
+}
+.article-link5:active {
+	color: #00d447;
+}
+.article-link5:visited {
+	color: #0d0053;
+}
+/* =========================================:FOKUS========================================= */
+.link-example{
+	display: inline-block;
+	padding: 15px 30px;
+	margin: 0 0 20px 30px;
+	background-color: rgb(255, 184, 184);
+	border-radius: 15%;
+	box-shadow: 2px 2px 0 rgb(173, 58, 58);
+}
+.link-example:focus{
+	outline: 5px dashed #0d0053;
+	color: green;
+	font-weight: 900;
+}
+.link-example1{
+	display: inline-block;
+	padding: 15px 30px;
+	margin: 0 0 20px 30px;
+	background-color: rgb(255, 184, 184);
+	border-radius: 15%;
+	box-shadow: 2px 2px 0 rgb(173, 58, 58);
+}
+.link-example1:focus{
+	outline: none;
+}
+/* =============================Псевдокласс :TARGET==================================== */
+.link-example2{
+	display: inline-block;
+	padding: 15px 30px;
+	background-color: rgb(255, 184, 184);
+	border-radius: 15%;
+	box-shadow: 0 5px 0 0 rgb(173, 58, 58);
+}
+.link-example2:hover{
+	margin: 1px 0 0 0;
+	box-shadow: 0 4px 0 0 rgb(173, 58, 58);
+}
+.link-example2:active{
+	box-shadow: 0 0 0 0 #000, inset 0 0 5px 0 #000;
+}
+.text-example2{
+	background-color: rgb(53, 187, 136);
+	padding: 20px;
+	display: none;
+}
+.text-example2:target{
+	/* background-color: #c663d3; */
+	display: block;
+}
+/* ===================================Псевдокласс :first-child=================================== */
+.article-block2 p{
+	margin: 0 0 25px 0;
+	background-color: rgb(255, 58, 179);
+	color: #FFFFFF;
+	padding: 15px;
+}
+.article-block2 *:first-child{
+	background-color: rgb(28, 65, 45);
+}
+/* ===================================Псевдокласс :first-of-type=================================== */
+.article-block3 p{
+	margin: 0 0 25px 0;
+	background-color: rgb(255, 58, 179);
+	color: #FFFFFF;
+	padding: 15px;
+}
+.article-block3 p:first-of-type{
+	background-color: rgb(12, 37, 121);
+}
+/* ===================================Псевдокласс :last-child=================================== */
+.article-block4 p{
+	margin: 0 0 25px 0;
+	background-color: rgb(37, 24, 32);
+	color: #FFFFFF;
+	padding: 15px;
+}
+.article-block4 *:last-child{
+	background-color: rgb(54, 131, 90);
+}
+/* ===================================Псевдокласс :last-of-type=================================== */
+.article-block5 p{
+	margin: 0 0 25px 0;
+	background-color: rgb(158, 88, 131);
+	color: #FFFFFF;
+	padding: 15px;
+}
+.article-block5 p:last-of-type{
+	background-color: rgb(177, 26, 26);
+}
+/* ===================================Псевдокласс :nth-child=================================== */
+.article-list1 li{
+	margin: 0 0 5px 0;
+	background-color: rgb(116, 73, 99);
+	color: #FFFFFF;
+	padding: 10px;
+}
+.article-list1 li:nth-child(2),
+.article-list1 li:nth-child(3){
+	background-color: rgb(43, 255, 0);
+}
+/* ===================================Псевдокласс :nth-child (обращение ко всем нечетным объектам)=================================== */
+.article-list2 li{
+	margin: 0 0 5px 0;
+	background-color: rgb(116, 73, 99);
+	color: #FFFFFF;
+	padding: 10px;
+}
+.article-list2 li:nth-child(odd){
+	background-color: rgb(0, 0, 0);
+}
+/* ===================================Псевдокласс :nth-child (обращение ко всем четным объектам)=================================== */
+.article-list3 li{
+	margin: 0 0 5px 0;
+	background-color: rgb(116, 73, 99);
+	color: #FFFFFF;
+	padding: 10px;
+}
+.article-list3 li:nth-child(even){
+	background-color: rgb(88, 29, 165);
+}
+/* ===================================Псевдокласс :nth-child (обращение к каждому 3-му объекту)=================================== */
+.article-list4 li{
+	margin: 0 0 5px 0;
+	background-color: rgb(116, 73, 99);
+	color: #FFFFFF;
+	padding: 10px;
+}
+.article-list4 li:nth-child(3n){
+	background-color: rgb(148, 0, 141);
+}
+/* ===================================Псевдокласс :nth-child (обращение к каждому 2-му объекту начиная с 4-го)=================================== */
+.article-list5 li{
+	margin: 0 0 5px 0;
+	background-color: rgb(116, 73, 99);
+	color: #FFFFFF;
+	padding: 10px;
+}
+.article-list5 li:nth-child(2n+4){
+	background-color: rgb(0, 81, 202);
+}
+/* =======================Обращение к конкретным элементам в блоке по типу======================= */
+.article-list6 li{
+	margin: 0 0 5px 0;
+	background-color: rgb(102, 102, 102);
+	color: #FFFFFF;
+	padding: 10px;
+}
+.article-list6 li:nth-of-type(1){
+	background-color: rgb(82, 27, 52);
+}
+/* =======================Обращение к конкретным элементам в блоке по типу======================= */
+.article-list7 li{
+	margin: 0 0 5px 0;
+	background-color: rgb(102, 102, 102);
+	color: #FFFFFF;
+	padding: 10px;
+}
+.article-list7 li:not(.article-list7-item){
+	background-color: rgb(93, 86, 189);
+}
+/* =======================Псевдоэлемент ::first-line======================= */
+.article-pseudo{
+	padding: 30px;
+	background-color: #95b2ff;
+	color: #fff;
+}
+.article-pseudo-text::first-line{
+	color: #659e78;
+}
+/* =======================Псевдоэлемент ::first-letter======================= */
+.article-pseudo1{
+	padding: 30px;
+	background-color: #95b2ff;
+	color: #fff;
+}
+.article-pseudo-text1::first-letter{
+	color: #659e78;
+	font-size: 32px;
+	font-weight: 900;
+}
+/* ========================================ВАЖНО================================== */
+.important{
+	font-size: 26px;
+	font-weight: 900;
+	color: #ff2a23;
+	background-color: rgb(0, 255, 106);
+	padding: 30px;
+}
+/* =======================Псевдоэлемент ::before (До)======================= */
+.article-pseudo2{
+	padding: 30px;
+	background-color: #dd95ff;
+	color: #fff;
+}
+.article-pseudo-text2::before{
+	content: "Я before";
+	font-size: 22px;
+	font-weight: 700;
+	color: blue;
+}
+/* =======================Псевдоэлемент ::after (После)======================= */
+.article-pseudo3{
+	padding: 30px;
+	background-color: #dd95ff;
+	color: #fff;
+}
+.article-pseudo-text3::after{
+	content: "а я after";
+	font-size: 22px;
+	font-weight: 700;
+	color: red;
+}
+
+.list-pseudo{
+	background-color: rgb(253, 177, 177);
+	padding: 30px;
+}
+.list-pseudo li::before{
+	content: "";
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	background: url("../img/icons/Vector.svg") 0 0 / 16px no-repeat;
+	margin: 0 10px -1.5px -25px;
+}
+.num-list{
+	counter-reset: item;
+}
+.num-list li::before{
+	counter-increment: item;
+	content: "(" counter(item) ")";
+	margin: 0px 10px 0px 0px;
+	color: red;
+	font-size: 20px;
+}
+/* ================================================================MAKET-1==================================================================== */
+.maket1 {
+	text-align: left;
+	padding: 0 0 26px 0;
+}
+.maket1 h6{
+	font-weight: 700;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #1E212C;
+	margin: 0 0 8px 0;
+}
+.maket1 h2{
+	font-weight: 900;
+	font-size: 46px;
+	line-height: 130%;
+	color: #1E212C;
+	margin: 0 0 40px 0;
+}
+/* обращение ко всем */
+.maket1 > *:last-child{
+	margin-bottom: 0;
+}
+.maket-list li {
+	margin: 0 0 12px 0;
+}
+.maket-list{
+	max-width: 390px;
+	margin: 0 0 22px 0;
+	padding: 0 0 0 32px;
+}
+.maket-list li::before{
+	content: "";
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url("../img/icons/Vector.svg") 0 0 / 16px no-repeat;
+	margin: 0 16px -1.5px -32px;
+}
+.maket-link {
+	display: inline-block;
+	margin: 0 0 26px 0;
+	padding: 10px 32px;
+	align-items: center;
+	text-align: center;
+	letter-spacing: 0.5px;
+	color: #FFFFFF;
+	background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+	border-radius: 4px;
+}
+.maket-link:hover{
+	background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+	border-radius: 4px;
+}
+.maket-link:active{
+	background: linear-gradient(55.95deg, #FF3F3A 0%, #F75E05 100%);
+}
+
+
+/* =====================================Maket-2================================== */
+.maket2-h2 {
+	font-family: "Taviraj";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 36px;
+	line-height: 40px;
+	letter-spacing: 0.02em;
+	color: #333333;
+	margin: 0 0 8px 0;
+}
+.maket2-h2::after{
+	content: "";
+	display: block;
+	width: 65px;
+	border: 1px solid #333333;
+}
+
+/* ===========================================Footer======================================= */
+.footer-link{
+	text-align: center;
+	font-size: 28px;
+	font-weight: 900;
+	color: rgba(0, 38, 206, 0.521);
+	text-transform: uppercase;
+}
+
+

@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Lesson 8</title>
+</head>
+<body>
+	<!--========================================= Article ===============================================-->
+	<div class="wrapper">
+		<header class="header">
+			<nav id="section" class="menu">
+				<ul class="menu-list">
+					<li class="list-item">
+						<a href="#section1">псевдокласс:hover</a>
+					</li>
+					<li class="list-item">
+						<a href="#section2">псевдокласс :hover+:active</a>
+					</li>
+					<li class="list-item">
+						<a href="#section3">псевдокласс :hover+:active+:visited</a>
+					</li>
+					<li class="list-item">
+						<a href="#section4">Псевдокласс :focus</a>
+					</li>
+					<li class="list-item">
+						<a href="#section5">Псевдокласс :focus{none}</a>
+					</li>
+					<li class="list-item">
+						<a href="#section6">Псевдокласс :target</a>
+					</li>
+					<li class="list-item">
+						<a href="#section7">Псевдокласс :first-child</a>
+					</li>
+					<li class="list-item">
+						<a href="#section8">Псевдокласс :first-of-type</a>
+					</li>
+					<li class="list-item">
+						<a href="#section9">Псевдокласс :last-child</a>
+					</li>
+					<li class="list-item">
+						<a href="#section10">Псевдокласс :last-of-type</a>
+					</li>
+					<li class="list-item">
+						<a href="#section11">Псевдокласс :nth-child</a>
+					</li>
+					<li class="list-item">
+						<a href="#section12">Псевдокласс :not</a>
+					</li>
+					<li class="list-item">
+						<a href="#section13">Псевдоэлемент ::first-line</a>
+					</li>
+					<li class="list-item">
+						<a href="#section14">Псевдоэлемент ::first-letter</a>
+					</li>
+					<li class="list-item">
+						<a href="#section15">Псевдоэлемент ::before</a>
+					</li>
+					<li class="list-item">
+						<a href="#section16">Псевдоэлемент ::after</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<main class="main">
+			<div class="article">
+				<h1>Псевдокласы и псевдоэлементы</h1>
+				<h2 class="article-h2-h2">Псевдоклассы состояния</h2>
+				<h2 id="section1" class="article-title">Ниже применен псевдокласс :hover</h2>
+				<a class="article-link1" href="">Я ссылка №1</a>
+				<div class="article-block1">
+					<p class="article-paragraph1">
+						Я параграф №1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quod quis id illo consectetur quidem ducimus vero, aliquid illum officia sunt omnis odit nesciunt, obcaecati expedita tempora ad nobis corporis.
+					</p>
+					<p class="article-paragraph2">
+						Я параграф №2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quod quis id illo consectetur quidem ducimus vero, aliquid illum officia sunt omnis odit nesciunt, obcaecati expedita tempora ad nobis corporis.
+					</p>
+					<p class="article-paragraph3">
+						Я параграф №3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quod quis id illo consectetur quidem ducimus vero, aliquid illum officia sunt omnis odit nesciunt, obcaecati expedita tempora ad nobis corporis.
+					</p>
+				</div>
+				<h2 id="section2" class="article-title">Ниже применен псевдокласс :hover+:active </h2>
+				<a class="article-link2" href="">Я ссылка №2</a>
+				<h2 class="article-title">:hover+:active с картинками</h2>
+				<img class="article-image1" src="img/kickstarter-300px.jpg" alt="kickstarter">
+				<img class="article-image2" src="img/pixels-recommend-300px.png" alt="pixels-recommend">
+				<h2 id="section3" class="article-title">Ниже применен псевдокласс :hover+:active+:visited </h2>
+				<div class="article-block-link">
+					<a class="article-link3" href="https://cdnjs.com/libraries/meyer-reset" target="_blank">Я ссылка №3</a>
+					<a class="article-link4" href="https://epixx.github.io/emmet/" target="_blank">Я ссылка №4</a>
+					<a class="article-link5" href="https://rezka.ag/series/drama/1929-ostrye-kozyrki-2013.html#t:111-s:1-e:4" target="_blank">Я ссылка №5</a>
+				</div>
+				<h2 id="section4" class="article-title">Псевдокласс :focus</h2>
+				<a class="link-example" href="">Я кнопка №1</a>
+				<a class="link-example" href="">Я кнопка №2</a>
+				<a class="link-example" href="">Я кнопка №3</a>
+				<a class="link-example" href="">Я кнопка №4</a>
+				<h2 id="section5" class="article-title">Псевдокласс :focus{none}, лучше так не делать, так как пропадает возможность взаимодействовать с интерактивными элементами</h2>
+				<a class="link-example1" href="">Я кнопка №1</a>
+				<a class="link-example1" href="">Я кнопка №2</a>
+				<a class="link-example1" href="">Я кнопка №3</a>
+				<a class="link-example1" href="">Я кнопка №4</a>
+				<h2 id="section6" class="article-title">Псевдокласс :target</h2>
+				<div class="example">
+					<a class="link-example2" href="#text-block2">Я кнопка</a>
+					<p id="text-block2" class="text-example2">
+						Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod, laboriosam modi, amet maxime consectetur labore quam ipsa aut rem adipisci sunt officia distinctio molestiae fugit reiciendis eos, quidem accusantium iure.
+					</p>
+				</div>
+				<h2 class="article-h2-h2">Псевдоклассы положения в коде</h2>
+				<h2 id="section7" class="article-title">Псевдокласс :first-child</h2>
+				<span>Обращаеться к первому элемкнту внутри родителя</span>
+				<div class="article-block2">
+					<p>
+						Параграф №1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus blanditiis quos aut rerum earum, aperiam commodi accusantium consequatur voluptate officiis nam corrupti nisi iure, ratione quo et, eligendi animi. Delectus!
+					</p>
+					<p>
+						Параграф №2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus blanditiis quos aut rerum earum, aperiam commodi accusantium consequatur voluptate officiis nam corrupti nisi iure, ratione quo et, eligendi animi. Delectus!
+					</p>
+					<p>
+						Параграф №3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus blanditiis quos aut rerum earum, aperiam commodi accusantium consequatur voluptate officiis nam corrupti nisi iure, ratione quo et, eligendi animi. Delectus!
+					</p>
+					<p>
+						Параграф №14 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus blanditiis quos aut rerum earum, aperiam commodi accusantium consequatur voluptate officiis nam corrupti nisi iure, ratione quo et, eligendi animi. Delectus!
+					</p>
+				</div>
+				<h2 id="section8" class="article-title">Псевдокласс :first-of-type</h2>
+				<div class="article-block3">
+					<span>Обращаеться к первому элементу по конкретному тегу внутри родителя </span>
+					<p>
+						Параграф №1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus blanditiis quos aut rerum earum, aperiam commodi accusantium consequatur voluptate officiis nam corrupti nisi iure, ratione quo et, eligendi animi. Delectus!
+					</p>
+					<p>
+						Параграф №2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus blanditiis quos aut rerum earum, aperiam commodi accusantium consequatur voluptate officiis nam corrupti nisi iure, ratione quo et, eligendi animi. Delectus!
+					</p>
+					<p>
+						Параграф №3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus blanditiis quos aut rerum earum, aperiam commodi accusantium consequatur voluptate officiis nam corrupti nisi iure, ratione quo et, eligendi animi. Delectus!
+					</p>
+					<p>
+						Параграф №14 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus blanditiis quos aut rerum earum, aperiam commodi accusantium consequatur voluptate officiis nam corrupti nisi iure, ratione quo et, eligendi animi. Delectus!
+					</p>
+				</div>
+				<h2 id="section9" class="article-title">Псевдокласс :last-child</h2>
+				<span>Обращаеться к последнему элементу внутри родителя</span>
+				<div class="article-block4">
+					<p>
+						Параграф №1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus blanditiis quos aut rerum earum, aperiam commodi accusantium consequatur voluptate officiis nam corrupti nisi iure, ratione quo et, eligendi animi. Delectus!
+					</p>
+					<p>
+						Параграф №2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus blanditiis quos aut rerum earum, aperiam commodi accusantium consequatur voluptate officiis nam corrupti nisi iure, ratione quo et, eligendi animi. Delectus!
+					</p>
+					<p>
+						Параграф №3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus blanditiis quos aut rerum earum, aperiam commodi accusantium consequatur voluptate officiis nam corrupti nisi iure, ratione quo et, eligendi animi. Delectus!
+					</p>
+					<p>
+						Параграф №14 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus blanditiis quos aut rerum earum, aperiam commodi accusantium consequatur voluptate officiis nam corrupti nisi iure, ratione quo et, eligendi animi. Delectus!
+					</p>
+				</div>
+				<h2 id="section10" class="article-title">Псевдокласс :last-of-type</h2>
+				<div class="article-block5">
+					<span>Обращаеться к последнему элементу по конкретному тегу внутри родителя</span>
+					<p>
+						Параграф №1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus blanditiis quos aut rerum earum, aperiam commodi accusantium consequatur voluptate officiis nam corrupti nisi iure, ratione quo et, eligendi animi. Delectus!
+					</p>
+					<p>
+						Параграф №2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus blanditiis quos aut rerum earum, aperiam commodi accusantium consequatur voluptate officiis nam corrupti nisi iure, ratione quo et, eligendi animi. Delectus!
+					</p>
+					<p>
+						Параграф №3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus blanditiis quos aut rerum earum, aperiam commodi accusantium consequatur voluptate officiis nam corrupti nisi iure, ratione quo et, eligendi animi. Delectus!
+					</p>
+					<p>
+						Параграф №14 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus blanditiis quos aut rerum earum, aperiam commodi accusantium consequatur voluptate officiis nam corrupti nisi iure, ratione quo et, eligendi animi. Delectus!
+					</p>
+				</div>
+				<h2 id="section11" class="article-title">Псевдокласс :nth-child(Порядковый номер элемента)</h2>
+				<div class="article-block6">
+					<span>Обращаеться к конкретным элементам внутри родителя</span>
+					<ul class="article-list1">
+						<li>Lorem ipsum dolor sit amet.</li>
+						<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, exercitationem.</li>
+						<li>Lorem ipsum dolor sit amet.</li>
+						<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, exercitationem.</li>
+						<li>Lorem ipsum dolor sit amet.</li>
+						<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, exercitationem.</li>
+					</ul>
+				</div>
+				<span>Обращаеться к конкретным элементам внутри родителя (odd)-обращение ко всем нечетным объектам</span>
+					<ul class="article-list2">
+						<li>Lorem ipsum dolor sit amet.</li>
+						<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, exercitationem.</li>
+						<li>Lorem ipsum dolor sit amet.</li>
+						<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, exercitationem.</li>
+						<li>Lorem ipsum dolor sit amet.</li>
+						<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, exercitationem.</li>
+					</ul>
+					<span>Обращаеться к конкретным элементам внутри родителя (even)-обращение ко всем четным объектам</span>
+					<ul class="article-list3">
+						<li>Lorem ipsum dolor sit amet.</li>
+						<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, exercitationem.</li>
+						<li>Lorem ipsum dolor sit amet.</li>
+						<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, exercitationem.</li>
+						<li>Lorem ipsum dolor sit amet.</li>
+						<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, exercitationem.</li>
+					</ul>
+					<span>Обращаеться к конкретным элементам внутри родителя (3n)-обращение к каждому 3-му объекту</span>
+					<ul class="article-list4">
+						<li>Lorem ipsum dolor sit amet.</li>
+						<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, exercitationem.</li>
+						<li>Lorem ipsum dolor sit amet.</li>
+						<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, exercitationem.</li>
+						<li>Lorem ipsum dolor sit amet.</li>
+						<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, exercitationem.</li>
+						<li>Lorem ipsum dolor sit amet.</li>
+						<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, exercitationem.</li>
+						<li>Lorem ipsum dolor sit amet.</li>
+						<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, exercitationem.</li>
+						<li>Lorem ipsum dolor sit amet.</li>
+						<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, exercitationem.</li>
+					</ul>
+					<span>Обращаеться к конкретным элементам внутри родителя (2n+4)-обращение к каждому 2-му объекту начиная с 4-го</span>
+					<ul class="article-list5">
+						<li>Lorem ipsum dolor sit amet.</li>
+						<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, exercitationem.</li>
+						<li>Lorem ipsum dolor sit amet.</li>
+						<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, exercitationem.</li>
+						<li>Lorem ipsum dolor sit amet.</li>
+						<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, exercitationem.</li>
+						<li>Lorem ipsum dolor sit amet.</li>
+						<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, exercitationem.</li>
+						<li>Lorem ipsum dolor sit amet.</li>
+						<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, exercitationem.</li>
+						<li>Lorem ipsum dolor sit amet.</li>
+						<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, exercitationem.</li>
+						<li>Lorem ipsum dolor sit amet.</li>
+						<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, exercitationem.</li>
+						<li>Lorem ipsum dolor sit amet.</li>
+						<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, exercitationem.</li>
+					</ul>
+					<span>Обращение к конкретным элементам в блоке по типу</span>
+					<ul class="article-list6">
+						<li>Lorem ipsum dolor sit amet.</li>
+						<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, exercitationem.</li>
+						<li>Lorem ipsum dolor sit amet.</li>
+						<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, exercitationem.</li>
+						<li>Lorem ipsum dolor sit amet.</li>
+						<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, exercitationem.</li>
+					</ul>
+					<h2 id="section12" class="article-title">Псевдокласс :not (исключение)</h2>
+					<span>Обращение к конкретным элементам в блоке по типу</span>
+					<ul class="article-list7">
+						<li class="article-list7-item">Lorem ipsum dolor sit amet.</li>
+						<li class="article-list7-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, exercitationem.</li>
+						<li>Lorem ipsum dolor sit amet.</li>
+						<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, exercitationem.</li>
+						<li>Lorem ipsum dolor sit amet.</li>
+						<li class="article-list7-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, exercitationem.</li>
+					</ul>
+					<h2 class="article-h2-h2">Псевдоэлементы которые редко используються</h2>
+					<h2 id="section13" class="article-title">Псевдоэлемент ::first-line (Задает стиль для первой строки текста)</h2>
+					<div class="article-pseudo">
+						<p class="article-pseudo-text">
+							Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias ab odit libero, quibusdam in quam dicta repudiandae, a, nulla maiores rem? Amet nesciunt ipsa maxime tenetur. Neque molestiae natus dicta? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos quod minima ipsum perspiciatis itaque autem hic, possimus vel dolorum est, consequuntur, dolores enim omnis iste eius tempore ad nulla perferendis.
+						</p>
+					</div>
+					<h2 id="section14" class="article-title">Псевдоэлемент ::first-letter (Задает стиль для первой буквы)</h2>
+					<div class="article-pseudo1">
+						<p class="article-pseudo-text1">
+							Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias ab odit libero, quibusdam in quam dicta repudiandae, a, nulla maiores rem? Amet nesciunt ipsa maxime tenetur. Neque molestiae natus dicta? 
+						</p>
+					</div>
+					<h2 class="article-h2-h2">Суперские псевдоэлементы частого использования</h2>
+					<p class="important">
+						!!!ВАЖНО!!!
+						1) ::before и ::after НЕ работают без параметра content:"";
+						2) ::before и ::after - СТРОЧНЫЕ!!!
+					</p>
+					<h2 id="section15" class="article-title">Псевдоэлемент ::before (Добавление контента "до" содержимого объекта)</h2>
+					<div class="article-pseudo2">
+						<p class="article-pseudo-text2">
+							Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias ab odit libero, quibusdam in quam dicta repudiandae, a, nulla maiores rem? Amet nesciunt ipsa maxime tenetur. Neque molestiae natus dicta? 
+						</p>
+					</div>
+					<h2 id="section16" class="article-title">Псевдоэлемент ::after (Добавление контента "после" содержимого объекта)</h2>
+					<div class="article-pseudo3">
+						<p class="article-pseudo-text3">
+							Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias ab odit libero, quibusdam in quam dicta repudiandae, a, nulla maiores rem? Amet nesciunt ipsa maxime tenetur. Neque molestiae natus dicta? 
+						</p>
+					</div>
+					<ul class="list-pseudo">
+						<li>Я пункт</li>
+						<li>Я длинный пункт Я длинный пункт Я длинный пункт Я длинный пункт Я длинный пункт Я длинный пункт Я длинный пункт Я длинный пункт Я длинный пункт Я длинный пункт</li>
+						<li>Я пункт</li>
+						<li>Я длинный пункт Я длинный пункт Я длинный пункт Я длинный пункт Я длинный пункт Я длинный пункт Я длинный пункт Я длинный пункт Я длинный пункт Я длинный пункт</li>
+						<li>Я пункт</li>
+						<li>Я длинный пункт Я длинный пункт Я длинный пункт Я длинный пункт Я длинный пункт Я длинный пункт Я длинный пункт Я длинный пункт Я длинный пункт Я длинный пункт</li>
+						<li>Я пункт</li>
+						<li>Я длинный пункт Я длинный пункт Я длинный пункт Я длинный пункт Я длинный пункт Я длинный пункт Я длинный пункт Я длинный пункт Я длинный пункт Я длинный пункт</li>
+					</ul>
+					<ol class="num-list">
+						<li>Я первый</li>
+						<li>Я второй</li>
+						<li>Я третий</li>
+						<li>Я четвертый</li>
+						<li>Я пятый</li>
+					</ol>
+			</div>
+			<!--============================================================= Maket-1 ===================================================================-->
+			<div class="maket1">
+				<h6>Who we are</h6>
+				<h2>Why Createx?</h2>
+				<ul class="maket-list">
+					<li class="maket-list-item">A fermentum in morbi pretium aliquam adipiscing donec tempus.</li>
+					<li class="maket-list-item">Vulputate placerat amet pulvinar lorem nisl.</li>
+					<li class="maket-list-item">Consequat feugiat habitant gravida quisque elit bibendum id adipiscing sed.</li>
+					<li class="maket-list-item">Etiam duis lobortis in fames ultrices commodo nibh.</li>
+					<li class="maket-list-item">Tincidunt sagittis neque sem ac eget.</li>
+					<li class="maket-list-item">Ultricies amet justo et eget quisque purus vulputate dapibus tortor.</li>
+				</ul>
+					<a class="maket-link" href="">More about us</a>
+			</div>
+			<!--============================================================= Maket-2 ===================================================================-->
+			<h2 class="maket2-h2">Maple Series</h2>
+		</main>
+		<footer class="footer">
+			<div class="footer-link">
+				<a class="link" href="#section">на вверх</a>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>
